@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c0f737c.css",
+    "main.js": "/static/js/main.25247a26.js",
+    "static/media/biography.jpg": "/static/media/biography.2e427c40cd4c0521cfb0.jpg",
+    "static/media/travel.jpg": "/static/media/travel.fb120e69addfbaccfd06.jpg",
+    "static/media/art_1.jpg": "/static/media/art_1.a00a14c860c81e183444.jpg",
+    "static/media/сomputers.jpg": "/static/media/сomputers.37076e8b53ff42e15ccd.jpg",
+    "static/media/poetry.jpg": "/static/media/poetry.c659869b27a5b7f796ad.jpg",
+    "static/media/medical.jpg": "/static/media/medical.6c3edc169a6f49845e27.jpg",
+    "static/media/cover-books.jpg": "/static/media/cover-books.e373bb5b532433219d67.jpg",
+    "static/media/history.jpg": "/static/media/history.3d5b5787967c9cac94ff.jpg",
+    "static/media/black-leather.jpg": "/static/media/black-leather.aab0096b34ce108b039b.jpg",
+    "static/media/no_cover.jpg": "/static/media/no_cover.7f560cb25821f6d9f03e.jpg",
+    "static/media/cooking.jpg": "/static/media/cooking.8d726560203a6f9a3f9a.jpg",
+    "static/media/my_library.jpg": "/static/media/my_library.6ead974286cded924656.jpg",
+    "static/media/telegram_icon.svg": "/static/media/telegram_icon.095a18550f37b476f73aa5f94069b696.svg",
+    "static/media/in_black.svg": "/static/media/in_black.10a5d741ffd12a7f34bde1f0a884d710.svg",
+    "static/media/phone.svg": "/static/media/phone.a190498deceabd15c9c13618ab755403.svg",
+    "static/media/mail_white.svg": "/static/media/mail_white.b1a0a190aa087e7e7e0f4abb045586b4.svg",
+    "static/media/projects_white.svg": "/static/media/projects_white.1521d25166cf9b3e60a56ec5310e3fd5.svg",
+    "index.html": "/index.html",
+    "main.1c0f737c.css.map": "/static/css/main.1c0f737c.css.map",
+    "main.25247a26.js.map": "/static/js/main.25247a26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c0f737c.css",
+    "static/js/main.25247a26.js"
+  ]
+}

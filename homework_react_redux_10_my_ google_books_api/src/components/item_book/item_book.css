@@ -1,0 +1,326 @@
+
+.card-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+/* Контейнер для перекидної картки та внутрішньої сторінки */
+.card {
+  background-color: rgba(0,0,0, .05);
+  box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
+  height: 35rem;
+  position: relative;
+  transition: all 1s ease;
+  width: 25rem;
+
+}
+
+/* Зовнішній контейнер для фліп-карти. Це не стосується внутрішньої сторінки */
+.flip-card {
+  height: 35rem;
+  perspective: 100rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  visibility: hidden;
+  width: 25rem;
+  z-index: 100;
+}
+
+/* Видимість зовнішнього контейнера встановлена на приховану. Це зроблено для того, щоб все всередині контейнера НЕ було встановлено як приховане */
+/* Це робиться для того, щоб можна було вибрати вміст внутрішньої сторінки */
+.flip-card > * {
+  visibility: visible;
+}
+
+/* Внутрішній контейнер для фліп-карти. Це не стосується внутрішньої сторінки */
+.flip-card__container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  width: 100%;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+/* Стиль для лицьової сторони фліп-карти */
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 36rem;
+  width: 25rem;
+  color: white;
+
+  padding: 1rem;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image//background/black-leather.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  cursor: pointer;
+}
+
+
+.card-front_img{
+  width: 70%;
+}
+.card-front_img > img{
+  display: block;
+  width: 100%;
+}
+.card-front_title {
+  text-align: center;
+  font-size: 1.5rem;
+  max-height: 3.1rem;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.card-front_text {
+  font-size: 1rem;
+  max-height: 3rem;
+  overflow: hidden;
+}
+
+/* Стиль для зворотного боку фліп-карти */
+.card-back {
+  background-color: #fafbfa;
+  transform: rotateY(180deg);
+}
+
+.card-back_img {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+  display: block;
+  max-height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+/* Внутрішня сторінка */
+
+.inside-page {
+  background-color: #fafbfa;
+  box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  width: 25rem;
+  z-index: 1;
+  border-radius: .5rem;
+}
+
+.inside-page__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  height: 100%;
+  text-align: center; 
+  width: 100%;
+}
+
+.inside-page_tiitle{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.inside-page__text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #333;
+  max-height: 20rem;
+  overflow: hidden;
+}
+
+.inside-page__btn {
+  background:none;
+  border: 1px solid;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem;
+  transition: all .3s;
+  cursor: pointer;
+  width: 90%;
+  opacity: .8;
+  z-index: 10;
+}
+.inside-page__btn:hover,
+.inside-page__btn:focus{
+  opacity: 1;
+}
+.details-mobile{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+  backdrop-filter: blur(4px);
+
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  z-index: 130;
+
+  display: none;
+}
+.details-mobile_info{
+  width: 95%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  border-radius: .5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.details-mobile_info_tiitle{
+  font-size: 2.3rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 3%;
+
+}
+.details-mobile_info__text{
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.details-mobile_info__text > span{
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.btn-close{
+  color: white;
+  position: absolute;
+  top: .8rem;
+  right: 1rem;
+  z-index: 140;
+}
+/* Функціональність */
+
+@media (min-width: 600px) {
+  .card-section._show{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 120;
+
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);	
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(6px);
+
+  }
+
+  .card-section._show .card{
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+    width: 50rem;
+    transform: scale(1.4);
+  }
+  .card-section._show .flip-card__container{
+    transform: rotateY(-180deg);
+  }
+  .card-section._show .inside-page{
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 800px) {
+    .card-section._show .card{
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+  .card {
+    width: 30rem;
+    height: 45rem;
+  }
+
+  .flip-card {
+    width: 30rem;
+    height: 45rem;
+  }
+
+  .card-front {
+    width: 30rem;
+    height: 45rem;
+  }
+  .card-front_title {
+    font-size: 2rem;
+    font-weight: 600;
+    max-height: 4.1rem;
+  }
+
+  .card-front_text {
+    font-size: 1.4rem;
+  }
+  .details-mobile._show{
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    width: 25rem;
+    height: 40rem;
+  }
+
+  .flip-card {
+    width: 25rem;
+    height: 40rem;
+  }
+
+  .card-front {
+    width: 25rem;
+    height: 40rem;
+  }
+
+  .card-front_title {
+    font-size: 2rem;
+    font-weight: 600;
+    max-height: 4.1rem;
+  }
+
+  .card-front_text {
+    font-size: 1.4rem;
+  }
+
+  .details-mobile._show {
+    display: flex;
+  }
+}

@@ -1,0 +1,43 @@
+.my_library{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.library_list{
+    color: white;
+}
+
+.library_list_item{
+    position: relative;
+    display: flex;
+    margin: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .10);
+}
+
+.my_library_title_second{
+    color: #ffffff;
+    font-size: 2.8rem;
+    margin: 2rem auto;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .my_library{
+        width: 95%;
+        margin: 1rem auto;
+    }
+}
+@media (max-width: 750px) {
+    .library_list_item{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 350px) {
+    .library_list_item {
+        padding: .5rem;
+    }
+}

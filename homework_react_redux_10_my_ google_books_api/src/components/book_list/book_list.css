@@ -1,0 +1,63 @@
+.main{
+    padding: 1rem 0;
+}
+
+.book_list{
+    width: 90%;
+    margin: 5rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.wrapper_page_btns{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+
+.btn_next,
+.btn_prev{
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    color: white;
+    opacity: .8;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn_next:hover{
+    opacity: 1;
+    border: 1px solid white;
+    transform: translateX(.5rem);
+}
+.btn_prev:hover{
+    opacity: 1;
+    border: 1px solid white;
+    transform: translateX(-.5rem);
+}
+
+.btn_prev._disabled{
+    cursor: default;
+    opacity: .4;
+    transform: none;
+}
+
+
+@media (max-width: 600px) {
+    .book_list{
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .wrapper_page_btns{
+        width: 90%;
+    }
+}

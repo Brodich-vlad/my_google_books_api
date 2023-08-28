@@ -1,0 +1,132 @@
+
+.main_page{
+    max-width: 144rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.479);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/cover-books.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ 
+}
+
+.main_page.Art {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/art_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main_page.Biography{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/biography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main_page.Computers{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/сomputers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main_page.History{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/history.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main_page.Medical{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/medical.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main_page.Poetry {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/poetry.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main_page.Travel {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/travel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main_page.cooking {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/cooking.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main_page.myLibrary {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)), url('../../image/background/my_library.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.my_title{
+    margin: 0 auto;
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+    padding-left: 4%;
+    font-weight: 500;
+}
+
+
+
+.btn_top{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 3rem 1rem auto;
+    display: none;
+    display: flex;
+    cursor: pointer;
+}
+.btn_top > span{
+    font-size: 2.5rem;
+    font-weight: 400;
+
+}
+
+
+@media (max-width: 860px) {
+    .btn_top{
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .my_title{
+        margin: 0 auto;
+        color: white;
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+}
